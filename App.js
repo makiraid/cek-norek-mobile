@@ -41,7 +41,7 @@ class App extends React.Component {
     } else if (!selectedItems.id) {
         alert("banknya woiiii")
     } else {
-        axios.get(`https://api.riskymakira.com/cek-norek?kodeBank=${kodeBank}&noRek=${noRek}`)
+        axios.get(`https://api.makira.id/cek-norek?kodeBank=${kodeBank}&noRek=${noRek}`)
     .then(function (response) {
         // handle success
         alert(JSON.stringify(response.data));
